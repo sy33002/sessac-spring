@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+<h1>실습2. post로 정보받기</h1>
+<form action="/post/practice123" method="post">
+    <label for="name">이름</label>
+    <input type="text" name="name" id="name" required />
+    <fieldset>
+        <legend>성별</legend>
+        <input type="radio" name="gender" id="man" value="남자" required />
+        <label for="man">남자</label>
+        <input type="radio" name="gender" id="woman" value="여자" />
+        <label for="woman">여자</label>
+    </fieldset>
+    <fieldset>
+        <legend>생년월일</legend>
+        <select name="year" id="year">
+            <option value="1999">1999</option>
+        </select>
+        <span>년</span>
+        <select name="month" id="month">
+            <option value="10">10</option></select
+        ><span>월</span>
+        <select name="day" id="day">
+            <option value="15">15</option></select
+        ><span>일</span>
+    </fieldset>
+    <fieldset>
+        <legend>관심사</legend>
+        <input type="checkbox" name="interest" id="travel" value="여행" />
+        <label for="travel">여행</label>
+        <input type="checkbox" name="interest" id="fashion" value="패션" />
+        <label for="fashion">패션</label>
+        <input type="checkbox" name="interest" id="food" value="음식" />
+        <label for="food">음식</label>
+    </fieldset>
+    <button>회원가입</button>
+</form>
+</body>
+</html>
