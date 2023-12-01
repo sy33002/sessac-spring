@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h1>회원가입을 환영합니다.</h1>
+  <p th:text="'당신의 아이디는 ' + ${data.userId}"></p>
+  <p th:text="'당신의 비밀번호는 ' + ${data.password}"></p>
+</body>
+</html>

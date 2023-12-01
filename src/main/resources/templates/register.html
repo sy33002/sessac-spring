@@ -22,6 +22,7 @@
             axios.post('/register/practice', {userId: form.userId.value, password: form.password.value, email:form.email.value})
                 .then((res)=>{
                     console.log( res.data );
+                    window.location.href = 'userDetail.html'
                 });
         }
     </script>
